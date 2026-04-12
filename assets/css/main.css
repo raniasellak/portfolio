@@ -1878,3 +1878,75 @@ section,
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(20, 157, 221, 0.25);
 }
+
+/* Certifications section styling */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.certification-card {
+  background: var(--surface-color);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid color-mix(in srgb, var(--default-color), transparent 95%);
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(20, 157, 221, 0.12);
+  border-color: var(--accent-color);
+}
+
+.cert-icon {
+  width: 60px;
+  height: 60px;
+  background: color-mix(in srgb, var(--accent-color), transparent 90%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.certification-card:hover .cert-icon {
+  background: var(--accent-color);
+  color: white;
+}
+
+.cert-icon i {
+  font-size: 28px;
+  color: var(--accent-color);
+}
+
+.certification-card:hover .cert-icon i {
+  color: white;
+}
+
+.cert-info h4 {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.cert-info .status {
+  font-size: 13px;
+  color: var(--accent-color);
+  font-weight: 600;
+  display: block;
+  margin-top: 5px;
+}
+
+.cert-info .issuer {
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+}
