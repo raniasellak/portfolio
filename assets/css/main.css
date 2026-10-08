@@ -1950,3 +1950,8 @@ section,
   font-size: 14px;
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
+
+ 
+/* ===== NOUVEAU : LOGOS DES STAGES (ALTEN + VALA) ===== */
+.exp-header { display: flex; align-items: center; gap: 20px; } /* Logo à gauche, texte à droite sur une ligne */
+.exp-logo { width: 120px; height: 120px; object-fit: contain; border-radius: 8px; background: #fff; padding: 4px; flex-shrink: 0; } /* Taille fixe, logo non déformé, fond blanc */
